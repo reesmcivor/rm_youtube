@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<layout>
+	<default>
+		<reference name="header">
+			<block type="rm_youtube/youtube" template="rm/youtube/youtube.phtml" name="youtube" />			
+		</reference>
+		<remove name="head" />
+	</default>
+</layout>

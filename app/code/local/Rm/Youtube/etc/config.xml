@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Rm_Youtube>
+			<version>0.1.0</version>
+			<platform>ce</platform>
+		</Rm_Youtube>
+	</modules>
+	<frontend>
+		<layout>
+			<updates>
+				<Rm_Youtube>
+					<file>rm/youtube/youtube.xml</file>
+				</Rm_Youtube>
+			</updates>
+		</layout>
+	</frontend>
+	<global>
+		<helpers>
+			<rm_youtube>
+				<class>Rm_Youtube_Helper</class>
+			</rm_youtube>
+		</helpers>
+		<blocks>
+			<rm_youtube>
+				<class>Rm_Youtube_Block</class>
+			</rm_youtube>
+		</blocks>
+	</global>
+</config>

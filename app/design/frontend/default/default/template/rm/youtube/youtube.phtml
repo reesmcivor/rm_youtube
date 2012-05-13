@@ -1,0 +1,18 @@
+<?php
+
+$_helper = Mage::helper('rm_youtube');
+
+?>
+
+<div id="rm_youtube">
+	<h1>Youtube Videos</h1>
+	<?php
+	$sVids = "http://www.youtube.com/watch?v=nSzeJRcVJmI&feature=g-all-u http://www.youtube.com/watch?v=nSzeJRcVJmI&feature=g-all-u";
+	$aVideos = $this->setYtVids($sVids)->getYtVids();
+	?>
+	
+	<?php foreach($aVideos as $sVidId => $aVidData) : ?>
+		<img src="<?php echo $_helper->getImage( $sVidId ); ?>" alt="" />
+	<?php endforeach; ?>
+	
+</div>
